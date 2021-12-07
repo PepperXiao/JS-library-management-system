@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+    <title>Hello</title>
+    <link rel="stylesheet" type="text/css" href="Style/register.css">
+    <!--<link rel="stylesheet"  type="text/javascript" href="Style/login.js">-->
+    <script src="js/jquery-2.1.0.min.js"></script>
+    <!--<script src="Style/login.js"></script>-->
+</head>
+<body>
+
+<div class="login-box">
+    <!-- <h1>Sign up</h1> -->
+    <div class="input-box">
+        <div class="input-text">
+            <!-- username -->
+            <input type="text" placeholder="username" id="username">
+        </div>
+        <div class="input-text">
+            <!-- password -->
+            <input type="password" placeholder="password" id="password">
+        </div>
+        <div class="input-text">
+            <!-- confirm the password -->
+            <input type="password" placeholder="password" id="password2">
+        </div>
+        <div class="input-btn" id="button">
+            Sign up
+        </div>
+        <!--<div class="sign-up">-->
+            <!--还没账户？<a href="#">立即注册</a>-->
+        <!--</div>-->
+    </div>
+</div>
+
+
+</body>
+
+<script type="module">
+    import register from "./js/register.js"
+	
+    window.onload=function () {
+        var username= document.getElementById("username")
+        var password= document.getElementById("password")
+        var password2= document.getElementById("password2")
+
+        document.getElementById("button").addEventListener('click',function () {
+            register();
+        })
+
+    }
+
+</script>
+</html>

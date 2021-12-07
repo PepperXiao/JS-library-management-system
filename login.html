@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+    <title>Hello</title>
+    <link rel="stylesheet" type="text/css" href="Style/login.css">
+	<script src="js/jquery-2.1.0.min.js"></script>
+</head>
+
+
+
+<body id="bg">
+
+
+
+    <div class="login-box">
+        <!-- <h1>Login</h1> -->
+        <div class="input-box">
+
+            <div class="input-text">
+                <!-- <span class='iconfont icon-mine'></span> -->
+                <input type="text" placeholder="username" id="username">
+            </div>
+            <div class="input-text">
+                <!-- <span class='iconfont icon-lock'></span> -->
+                <input type="password" placeholder="password" id="password">
+            </div>
+            <div class="input-btn" id="button">
+                Login
+            </div>
+            <div class="register_btn">
+                <a href="forget.html"> Forgot&nbsp;Password?</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="register.html">Sign&nbsp;up</a>
+            </div>
+        </div>
+    </div>
+
+   
+   
+
+
+  
+</body>
+
+<script type="module">
+    import data from "./js/login.js"
+    window.onload = function(){
+    var username = document.getElementById("username")
+    var usernamespan = document.getElementById("usernamespan")
+    var password = document.getElementById("password")
+    var passwordspan = document.getElementById("passwordspan")
+     document.getElementById("button").addEventListener('click',function(){
+		   data();
+         })
+ }
+</script>
+</html>
